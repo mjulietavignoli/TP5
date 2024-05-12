@@ -9,7 +9,6 @@ let numRandom = 0;
 function iniciarJuego() {
   $formulario.classList.remove("d-none");
   numRandom = Math.floor(Math.random() * 100) + 1;
-  console.log(numRandom);
 }
 
 function adivino() {
