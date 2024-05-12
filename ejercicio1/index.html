@@ -16,21 +16,31 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/index.css">
     <title>TP5 - E1</title>
   </head>
   <body>
     <header class="bg-warning fs-1 text-black text-center py-2">
       <p>¡Bienvenido al juego!</p>
     </header>
-    <main class="bg-dark py-5 d-flex row">
-        <button id="btnIniciar" type="button" class="btn btn-outline-warning mx-auto col-4">Click aquí para comenzar el juego</button>
-        <form id="formulario" class="row my-3 d-none">
-            <div class="mx-3 row col-7 mx-1">
-              <input id="inputIngresar" type="number" class="form-control" id="numero" name="numero" placeholder="Ingresa un numero" required>
-            </div>
-            <button id="btnEnviar" type="submit" class="btn btn-outline-warning col-3 mx-1">Enviar</button>
-          </form>
-    </main>
+    <main class="bg-dark pt-3">
+      <div class="container d-flex justify-content-center">
+          <div class="col-12 col-md-8">
+              <button id="btnIniciar" type="button" class="btn btn-outline-warning mx-auto d-block mb-3">Click aquí para comenzar el juego</button>
+              <form id="formulario" class="d-none">
+                  <div class="row">
+                      <div class="col-8">
+                          <input id="inputIngresar" type="number" class="form-control" id="numero" name="numero" placeholder="Ingresa un numero" required>
+                      </div>
+                      <div class="col-4">
+                          <button id="btnEnviar" type="submit" class="btn btn-outline-warning w-100">Enviar</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </main>
+  
     <footer class="bg-dark fs-5 text-warning py-2">
       <p class="text-center">&copy; Todos los derechos reservados</p>
     </footer>
